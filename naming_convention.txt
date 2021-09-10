@@ -1,0 +1,117 @@
+# Overview
+########################################
+A good naming convention is useful for systems administration.  This document serves as a guide with examples.
+
+# Tips
+########################################
+- Keep the hostname under 16 characters (because NetBIOS has a 15-character limitation).
+
+- Add zeroes if the abbreviation is shorter than the character length - Examples of 4-letter combinations:
+>> PHP = "php0"
+>> Generic Database Server = "db00"
+
+- When creating abbreviations, if the first syllable (or similar) of the word is the exact number of characters you need, that's usually a good choice because it's easier to remember - Examples:
+>> Docker = "dock"
+>> Kubernetes = "kube"
+>> Jenkins = "jenk"
+>> Nginx = "ngin"
+
+- When creating abbreviations, to avoid duplicate abbreviations, when possible, use the least-common letters in the alphabet:
+>> J, K, Q, V, W, X, Y, Z
+
+- When creating abbreviations, to avoid duplicates, while not a rule, a good starting point is to (1) use the first letter then (2) skip the vowels - Examples:
+>> Apache = "apch"
+>> Maria DB = "mrdb"
+
+# Format (15 Characters)
+########################################
+
+# Syntax
+<SLA><ComputerType><ClientName>-<Host><PhysicalLocation>-<RoleOrCustomValue><Number>.<Domain>.<TLD>
+
+Examples:
+- daap-aas-apch01.domain.com
+- idco-oca-jsmi01.example.net
+
+# SLA
+d	Development
+i	Individual's Workstation
+p	Production
+s	Staging
+t	Testing
+
+# Computer Type
+a	Appliance (IDS/IPS, KVM, etc.)
+c	Container (LXC)
+d	Desktop Computer
+l	Laptop Computer
+n	Network Device (firewall, switch, etc.)
+p	Phone (conference device, smart phone, etc.)
+r	Rack Server (poweredge, proliant, super micro, etc.)
+t	Tablet
+v	Virtual Machine (VM)
+
+# Client Name
+- If the server is an infrastructure component that doesn't belong to a specific client, use the company name or something generic, like "co" or "in".
+
+ap	Apple
+az	Amazon
+co	Generic Company
+fb	FaceBook
+gg	Google
+in	Infrastructure
+
+# Host
+a	AWS
+d	Data Center (usually, you'd abbreviate the actual data center's name)
+g	GCP
+h	Home
+o	Office
+r	Rack Space
+z	Azure
+
+# Physical Location
+- If you're using 3 letters, Airport codes can be helpful.
+- States already have designated abbreviations, so use those.
+
+as	Austin
+ca	California
+de	Delaware
+w1	US West One (AWS-specific)
+
+# Custom Value
+- Commonly the server's role or a person's name
+- If it's a person's name, don't skip the vowels
+
+apch	Apache
+cube	cubicle
+db00	Generic Database Server
+dock	Docker
+jenk	Jenkins
+kube	Kubernetes
+mrdb	MariaDB
+msql	MySQL
+ngin	nginx
+php0	PHP
+prox	proxmox
+jsmi	John Smith
+jdoe	Jane Doe
+
+# Number
+- increment from 01 to 99
+
+01	first
+02	second
+03	third
+
+# Domain
+domain		domain.com
+example		example.net
+something	something.local
+name		name.lan
+
+# TLD
+com	domain.com
+net	example.net
+local	something.local
+lan	name.lan
