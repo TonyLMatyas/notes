@@ -35,7 +35,7 @@ Examples:
 
 # SLA
 d	Development
-i	Individual's Workstation
+w	Workstation (Individual's Desktop/Laptop)
 p	Production
 s	Staging
 t	Testing
