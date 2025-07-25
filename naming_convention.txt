@@ -80,6 +80,7 @@ Commonly, this is the device/server's role.
   prxm  Proxmox
   tmpr  temporary
   vesx  VMware ESX host
+  wrks  workstation
 
 # Number
 Increment from 01 to 99.
