@@ -58,8 +58,7 @@ If the device is static, the closest 3-letter Airport code to the device's physi
 Alternatively, if the device is mobile, use something custom.
   nyc  New York, New York
   sfo  AWS us-west-1
-  hmd  Home devices: laptop
-  mbd  Mobile device: smart phone, tablet, etc.
+  mbd  Mobile device: laptop, smart phone, tablet, etc.
 
 # Custom Value
 Commonly, this is the device/server's role.
