@@ -17,7 +17,7 @@ When creating abbreviations, to avoid duplicates, a good starting point is to (1
 When possible, use the least-common letters in the alphabet for abbreviations:
   J, K, Q, V, W, X, Y, Z
 
-Add zeroes if the abbreviation is shorter than the character length - Examples of 4-letter combinations:
+If the abbreviation is too short, add zeroes to complete the character length - Examples of 4-letter combinations:
   PHP = "php0"
   Generic Database Server = "db00"
 
@@ -77,10 +77,11 @@ Commonly, this is the device/server's role.
   msql  MySQL
   ngnx  Nginx
   php0  PHP
+  prnt  Print server
   prxm  Proxmox
-  tmpr  temporary
+  tmpr  Temporary
   vesx  VMware ESX host
-  wrks  workstation
+  wrks  Workstation
 
 # Number
 Increment from 01 to 99.
